@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1906107699737441565}
   m_Layer: 0
   m_Name: Player_Dog
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   _thrust: 50
   respawn: {fileID: 0}
   isRightSide: 1
+  isRun: 0
   animator: {fileID: 8391784684266499057}
 --- !u!50 &6728422777393453984
 Rigidbody2D:

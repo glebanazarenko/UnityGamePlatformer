@@ -51,7 +51,11 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(moveX)); //Будет передано только положительное значение
 
-        if(Input.GetKey(KeyCode.LeftShift)){
+        if(Input.GetButtonDown("Jump") && isLanded){
+            Jump();
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) && isLanded){
             speed = 200f;
             isRun = true;
             animator.SetBool("IsRun", isRun);
@@ -72,9 +76,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonDown("Jump") && isLanded){
-            Jump();
-        }
+        
     }
 
     private void Jump(){
