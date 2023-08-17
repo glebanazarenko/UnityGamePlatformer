@@ -119,9 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-
-  controlID: 112
-
+  controlID: 107
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,9 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-
-  controlID: 58
-
+  controlID: 64
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,9 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-
-  controlID: 59
-
+  controlID: 53
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 444
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -528,9 +522,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-
-      m_ExpandedIDs: e4f4ffff
-
+      m_ExpandedIDs: 18edffffa2edffff64f7ffff02fbffff9e630000e26b0000f66b0000686c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -923,11 +915,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-
-    m_Target: {x: 17.105473, y: -2.0995486, z: -0.38470602}
+    m_Target: {x: -0.53695977, y: -1.8148025, z: -0.20754126}
     speed: 2
-    m_Value: {x: 17.105473, y: -2.0995486, z: -0.38470602}
-
+    m_Value: {x: -0.53695977, y: -1.8148025, z: -0.20754126}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -977,11 +967,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-
-    m_Target: 12.366548
+    m_Target: 6.3897424
     speed: 2
-    m_Value: 12.366548
-
+    m_Value: 6.3897424
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1051,9 +1039,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-
-    - Assets/Animation
-
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1061,20 +1047,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-
-  - Assets/Animation
-
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\79251\\Desktop\\\u0412\u0423\u0417\\Unity\\UnityGamePlatformer\\Platformer2D"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-
-    m_SelectedIDs: da660000
-    m_LastClickedID: 26330
-    m_ExpandedIDs: 00000000c866000000ca9a3b
-
+    m_SelectedIDs: 96620000
+    m_LastClickedID: 25238
+    m_ExpandedIDs: 000000007e62000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1102,9 +1084,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-
-    m_ExpandedIDs: 00000000c8660000
-
+    m_ExpandedIDs: 000000007e620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
