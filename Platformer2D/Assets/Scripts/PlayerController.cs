@@ -99,4 +99,16 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("First");
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = null;
+        }
+    }
 }
