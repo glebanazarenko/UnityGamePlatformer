@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     private void Jump(){
         isLanded = false;
         animator.SetBool("IsLanded", isLanded);
-        _rb.velocity = transform.TransformDirection(new Vector2(_rb.velocity.x, Mathf.Sqrt(2 * _thrust)));
+        _rb.velocity = transform.TransformDirection(new Vector2(_rb.velocity.x, Mathf.Sqrt(2 * _thrust * (isRun ? 1.5f : 1f))));
     }
     
     void OnTriggerEnter2D(Collider2D other) {
