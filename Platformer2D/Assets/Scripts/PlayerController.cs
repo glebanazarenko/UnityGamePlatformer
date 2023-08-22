@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
     private void Jump(){
         isLanded = false;
         animator.SetBool("IsLanded", isLanded);
-        _rb.velocity = transform.TransformDirection(new Vector2(_rb.velocity.x, Mathf.Sqrt(2 * _thrust)));
+        _rb.velocity = transform.TransformDirection(new Vector2(_rb.velocity.x, Mathf.Sqrt(2 * _thrust * (isRun ? 1.5f : 1f))));
     }
     
     void OnTriggerEnter2D(Collider2D other) {
@@ -100,6 +100,18 @@ public class PlayerController : MonoBehaviour
 
         if(other.gameObject.name == "FirstLvl"){
             SceneManager.LoadScene("First");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = null;
         }
     }
 }
