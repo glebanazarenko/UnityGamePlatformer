@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     private BoxCollider2D mainCollider;
     
+    [SerializeField] private AudioSource Jumping;
+
     private void Awake() {
         _rb = GetComponent<Rigidbody2D>();
         mainCollider = GetComponent<BoxCollider2D>();
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(moveX)); //Будет передано только положительное значение
 
         if(Input.GetButtonDown("Jump") && isLanded){
+            Jumping.Play();
             Jump();
         }
 
@@ -97,6 +100,18 @@ public class PlayerController : MonoBehaviour
 
         if(other.gameObject.name == "FirstLvl"){
             SceneManager.LoadScene("First");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.name == "platfMovX"){
+            this.transform.parent = null;
         }
     }
 }
