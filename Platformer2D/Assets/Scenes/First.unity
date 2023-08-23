@@ -1747,7 +1747,7 @@ GameObject:
   - component: {fileID: 1006430256}
   - component: {fileID: 1006430259}
   m_Layer: 0
-  m_Name: platform
+  m_Name: platfMovX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
